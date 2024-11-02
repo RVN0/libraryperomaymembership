@@ -13,7 +13,7 @@ $authors = getAllauthor($pdo);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Books</title>
-    <link rel="stylesheet" href="bookstyle.css">
+    <link rel="stylesheet" href="style/bookstyle.css">
 </head>
 <body>
 <h1>Books</h1>

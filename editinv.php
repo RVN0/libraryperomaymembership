@@ -23,7 +23,6 @@ if (isset($_SESSION['success'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Book</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Edit the Book</h1>

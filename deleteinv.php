@@ -6,7 +6,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Delete Book Confirmation</title>
-	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="delete.css">
 </head>
 <body>

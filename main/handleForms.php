@@ -1,6 +1,6 @@
 <?php
 
-session_start(); // Start the session at the beginning
+session_start();
 
 $userId = $_SESSION['user_id'];
 
@@ -54,7 +54,7 @@ if (isset($_POST['insertBookBtn'])) {
     $query = insertbook($pdo, $author_id, $bookTitle, $bookGenre, $isFinished, $userId); 
 
     if ($query) {
-        header("Location: ../books.php?id=" . $author_id); // Redirect to the books page
+        header("Location: ../books.php?id=" . $author_id);
         exit;
     } else {
         echo "Insertion failed";
@@ -71,11 +71,11 @@ if (isset($_POST['editBookBtn'])) {
     $query = updatebook($pdo, $author_id, $bookTitle, $bookGenre, $isFinished, $_GET['id'], $userId);
 
     if ($query) {
-        header("Location: ../books.php"); // Redirect after successful update
+        header("Location: ../books.php");
         exit();
     } else {
         $_SESSION['error'] = "Update failed.";
-        header("Location: ../books.php?id=" . $_GET['id']); // Redirect back to the edit page
+        header("Location: ../books.php?id=" . $_GET['id']);
         exit();
     }
 }

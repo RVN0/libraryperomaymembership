@@ -22,7 +22,7 @@ function login($pdo, $username, $password) {
     $stmt->execute([$username]);
 
     if ($stmt->rowCount() === 1) {
-        // Returns associative array
+
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
         // Store user info as a session variable
